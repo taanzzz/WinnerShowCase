@@ -28,22 +28,22 @@
         }
 
         :root {
-            --navy: #0A1628;
-            --coral: #FF6B6B;
-            --gold: #FFD700;
-            --gold2: #FFB300;
-            --green: #00C853;
-            --dark-bg: #0D1117;
-            --card-bg: #161B22;
-            --surface: #21262D;
-            --text-primary: #F0F6FC;
-            --text-secondary: #8B949E;
-            --border: #30363D;
+            --navy: #1A202C;
+            --coral: #FF8F8F;
+            --gold: #FFD6A6;
+            --gold2: #FF9A86;
+            --green: #C0E1D2;
+            --dark-bg: #FAFBFF;
+            --card-bg: #FFFFFF;
+            --surface: #FEEBF6;
+            --text-primary: #1A202C;
+            --text-secondary: #4A5568;
+            --border: rgba(0, 0, 0, 0.08);
             --blue: #58A6FF;
             --purple: #A78BFA;
-            --teal: #2DD4BF;
-            --orange: #FB923C;
-            --pink: #F472B6;
+            --teal: #C0E1D2;
+            --orange: #FFD6A6;
+            --pink: #FEEBF6;
             --bottom-bar-h: 72px;
         }
 
@@ -96,16 +96,16 @@
             align-items: center;
             justify-content: space-between;
             height: 70px;
-            background: rgba(13, 17, 23, 0.88);
+            background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
         }
 
         nav.scrolled {
-            background: rgba(10, 22, 40, 0.98);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
         }
 
         .nav-logo {
@@ -203,7 +203,7 @@
             left: 0;
             right: 0;
             z-index: 999;
-            background: rgba(13, 17, 23, 0.98);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             padding: 20px 5% 30px;
@@ -389,7 +389,7 @@
             position: absolute;
             inset: 0;
             z-index: 1;
-            background: linear-gradient(135deg, rgba(10, 22, 40, 0.80) 0%, rgba(13, 17, 23, 0.65) 50%, rgba(10, 22, 40, 0.60) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(250, 251, 255, 0.75) 50%, rgba(255, 255, 255, 0.80) 100%);
         }
 
         #particleCanvas {
@@ -473,7 +473,7 @@
         }
 
         .hero-desc {
-            color: rgba(240, 246, 252, 0.82);
+            color: var(--text-secondary);
             font-size: clamp(0.9rem, 2vw, 1.05rem);
             line-height: 1.7;
             margin-bottom: 36px;
@@ -520,7 +520,7 @@
             font-weight: 600;
             font-size: clamp(0.9rem, 2vw, 1rem);
             text-decoration: none;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
@@ -598,7 +598,7 @@
             z-index: 2;
             width: 260px;
             border-radius: 36px;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
             animation: float 4s ease-in-out infinite;
         }
 
@@ -617,16 +617,16 @@
         .floating-badge {
             position: absolute;
             z-index: 3;
-            background: rgba(22, 27, 34, 0.92);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             border-radius: 16px;
             padding: 10px 16px;
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             animation: float-badge 3s ease-in-out infinite;
             white-space: nowrap;
         }
@@ -787,7 +787,7 @@
     ════════════════════════════════════════ */
         #how {
             padding: 100px 0;
-            background: linear-gradient(180deg, var(--dark-bg) 0%, #0e1420 100%);
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #FFFBB1 100%);
         }
 
         .how-header {
@@ -988,7 +988,8 @@
 
         .feature-card:hover {
             transform: translateY(-8px);
-            border-color: transparent;
+            border-color: rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
         }
 
         .feature-card:hover::before {
@@ -1134,7 +1135,7 @@
     ════════════════════════════════════════ */
         #screenshots {
             padding: 100px 0;
-            background: linear-gradient(180deg, var(--dark-bg) 0%, #0a0e16 100%);
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #FEEBF6 100%);
             overflow: hidden;
         }
 
@@ -1157,7 +1158,7 @@
             font-size: 0.83rem;
             font-weight: 600;
             border: 1.5px solid var(--border);
-            background: transparent;
+            background: #FFFFFF;
             color: var(--text-secondary);
             cursor: pointer;
             transition: all 0.3s ease;
@@ -1192,7 +1193,7 @@
         .phone-frame {
             position: relative;
             border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
             overflow: hidden;
             flex-shrink: 0;
             transition: all 0.4s ease;
@@ -1475,7 +1476,7 @@
     ════════════════════════════════════════ */
         #mechanic {
             padding: 100px 0;
-            background: linear-gradient(180deg, #0a0e16 0%, var(--dark-bg) 100%);
+            background: linear-gradient(180deg, #FFFBB1 0%, var(--dark-bg) 100%);
         }
 
         .mechanic-inner {
@@ -1507,7 +1508,7 @@
             text-align: center;
             padding: 20px;
             margin-bottom: 24px;
-            background: var(--surface);
+            background: #FFFFFF;
             border-radius: 16px;
             border: 1px solid var(--border);
         }
@@ -1712,7 +1713,8 @@
 
         .pay-card:hover {
             transform: translateX(10px);
-            border-color: rgba(255, 255, 255, 0.15);
+            border-color: var(--gold2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         /* Payment logo wrapper */
@@ -1832,7 +1834,7 @@
     ════════════════════════════════════════ */
         #security {
             padding: 100px 0;
-            background: linear-gradient(135deg, #0a0e16 0%, #0d1117 50%, #0a1628 100%);
+            background: linear-gradient(135deg, #FAFBFF 0%, #FEEBF6 50%, #FFFBB1 100%);
         }
 
         .security-header {
@@ -2002,7 +2004,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(0, 0, 0, 0.04);
             border-radius: 8px;
             padding: 6px 10px;
             font-size: 0.78rem;
@@ -2072,7 +2074,7 @@
     ════════════════════════════════════════ */
         #referral {
             padding: 100px 0;
-            background: linear-gradient(180deg, var(--dark-bg) 0%, #0a0e16 100%);
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #FFFBB1 100%);
         }
 
         .ref-inner {
@@ -2083,11 +2085,13 @@
         }
 
         .ref-card-demo {
-            background: linear-gradient(135deg, #1A0E30, #2D1B5E);
+            background: linear-gradient(135deg, #FFF0BE 0%, #FFFBB1 100%);
+            border: 1px solid rgba(0, 0, 0, 0.04);
             border-radius: 24px;
             padding: 32px;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
         }
 
         .ref-card-demo::before {
@@ -2098,7 +2102,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: rgba(167, 139, 250, 0.12);
+            background: rgba(255, 154, 134, 0.15);
         }
 
         .rcd-header {
@@ -2126,8 +2130,8 @@
         }
 
         .rcd-code {
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.06);
             border-radius: 12px;
             padding: 12px 18px;
             font-size: 0.85rem;
@@ -2159,9 +2163,10 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.6);
             border-radius: 12px;
             padding: 10px 14px;
+            border: 1px solid rgba(0, 0, 0, 0.02);
         }
 
         .rm-avatar {
@@ -2245,6 +2250,7 @@
             gap: 14px;
             align-items: flex-start;
             transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
         }
 
         .notif-card:hover {
@@ -2338,7 +2344,7 @@
     ════════════════════════════════════════ */
         #faq {
             padding: 100px 0;
-            background: linear-gradient(180deg, #0a0e16 0%, var(--dark-bg) 100%);
+            background: linear-gradient(180deg, #FEEBF6 0%, var(--dark-bg) 100%);
         }
 
         .faq-header {
@@ -2424,13 +2430,14 @@
         }
 
         .download-wrap {
-            background: linear-gradient(135deg, #0f1923 0%, #1a0e30 50%, #0a1628 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: linear-gradient(135deg, #FFFBB1 0%, #FEEBF6 50%, #FFF0BE 100%);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             border-radius: 32px;
             padding: 70px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08);
         }
 
         .dl-glow-1 {
@@ -2528,8 +2535,8 @@
 
         .dl-install {
             margin-top: 48px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.04);
             border-radius: 18px;
             padding: 28px;
             text-align: left;
@@ -2578,7 +2585,7 @@
        FOOTER
     ════════════════════════════════════════ */
         footer {
-            background: #070b10;
+            background: #FFFFFF;
             border-top: 1px solid var(--border);
             padding: 60px 5% 40px;
         }
@@ -2711,15 +2718,15 @@
             right: 0;
             z-index: 900;
             height: var(--bottom-bar-h);
-            background: rgba(13, 17, 23, 0.97);
+            background: rgba(255, 255, 255, 0.97);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
             padding-bottom: env(safe-area-inset-bottom);
-            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.03);
         }
 
         .btb-item {
@@ -3279,7 +3286,7 @@
             <li><a href="#badges">Badges</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
-        <a href="https://github.com/taanzzz/bangladesh/releases/download/v1.0.0/app-debug.apk" class="nav-cta"
+        <a href="https://github.com/taanzzz/Winner_Release_apk-/releases/download/v1.0.0/Winner.apk" class="nav-cta"
             onclick="triggerDownload(event,this)">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -3346,7 +3353,7 @@
             </svg>
             FAQ
         </a>
-        <a href="https://github.com/taanzzz/bangladesh/releases/download/v1.0.0/app-debug.apk" class="nav-cta"
+        <a href="https://github.com/taanzzz/Winner_Release_apk-/releases/download/v1.0.0/Winner.apk" class="nav-cta"
             onclick="triggerDownload(event,this);closeMobileMenu()">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -3383,7 +3390,7 @@
                         paid instantly to your bKash, Nagad, or Rocket account.
                     </p>
                     <div class="hero-ctas reveal delay-3">
-                        <a href="https://github.com/taanzzz/bangladesh/releases/download/v1.0.0/app-debug.apk"
+                        <a href="https://github.com/taanzzz/Winner_Release_apk-/releases/download/v1.0.0/Winner.apk"
                             class="btn-primary" onclick="triggerDownload(event,this)">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -5287,8 +5294,10 @@
     <section id="download">
         <div class="container">
             <div class="download-wrap reveal">
-                <div class="dl-glow-1"></div>
-                <div class="dl-glow-2"></div>
+                <div class="dl-glow-1"
+                    style="background:radial-gradient(circle, rgba(255,154,134,0.1) 0%, transparent 70%)"></div>
+                <div class="dl-glow-2"
+                    style="background:radial-gradient(circle, rgba(192,225,210,0.1) 0%, transparent 70%)"></div>
 
                 <div class="dl-label">
                     <span class="live-dot"></span>
@@ -5300,8 +5309,8 @@
                 </h2>
                 <p class="dl-subtitle">Download Winner App for free and start your first session today.</p>
 
-                <a href="https://github.com/taanzzz/bangladesh/releases/download/v1.0.0/app-debug.apk" class="dl-btn"
-                    onclick="triggerDownload(event,this)">
+                <a href="https://github.com/taanzzz/Winner_Release_apk-/releases/download/v1.0.0/Winner.apk"
+                    class="dl-btn" onclick="triggerDownload(event,this)">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -5392,9 +5401,12 @@
                     <a class="fb-logo" href="#">
                         <img src="https://res.cloudinary.com/dvig81f9i/image/upload/q_auto/f_auto/v1776359333/WinerAppLogo_doqzzf.png"
                             alt="Winner App" />
-                        <span>Winner App</span>
+                        <span
+                            style="background: linear-gradient(135deg, var(--gold2), var(--coral)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Winner
+                            App</span>
                     </a>
-                    <p>Bangladesh's most engaging 15-minute trading competition platform. Compete in real time, earn
+                    <p style="color: var(--text-secondary)">Bangladesh's most engaging 15-minute trading competition
+                        platform. Compete in real time, earn
                         real rewards — every session, every day.</p>
                     <div class="footer-social">
                         <a class="fs-btn" href="#" title="Facebook" aria-label="Facebook">
@@ -5483,8 +5495,8 @@
             </svg>
             <span class="btb-label">How it works</span>
         </a>
-        
-        <a href="https://github.com/taanzzz/bangladesh/releases/download/v1.0.0/app-debug.apk"
+
+        <a href="https://github.com/taanzzz/Winner_Release_apk-/releases/download/v1.0.0/Winner.apk"
             class="btb-item btb-download" onclick="triggerDownload(event,this)" aria-label="Download APK">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -5525,7 +5537,7 @@
             window.addEventListener('resize', resize);
             resize();
 
-            const COLORS = ['#FFB300', '#FF6B6B', '#58A6FF', '#A78BFA', '#2DD4BF', '#FFD700'];
+            const COLORS = ['#FF9A86', '#FFD6A6', '#C0E1D2', '#FF8F8F', '#FFF0BE'];
 
             class Particle {
                 constructor() { this.reset(); }
